@@ -1,3 +1,8 @@
+/**
+ * header section
+ */
+import Nav from "./components/header/Nav"
+import Header from "./components/header/Header"
 
 
 function App() {
@@ -5,7 +10,8 @@ function App() {
 
   return (
     <>
-    <h2>hola</h2>
+   <Nav/>
+   <Header/>
     </>
   )
 }
