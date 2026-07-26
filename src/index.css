@@ -2,20 +2,32 @@
 
 @import "tailwindcss";
 
-:root{
+:root {
     --font-principal: "Roboto"
-    --color-principal: #16c880;
+        --color-principal: #16c880;
 
     --color-dark-green: #032b1f;
 }
-
 @theme {
-    --font-roboto:"Roboto", sans-serift;
+    --font-roboto: "Roboto", sans-serift;
     --color-esmerald: oklch(0.596 0.145 163.225)
 }
 
-body{
+body {
     font-family: var(--font-principal);
     list-style: none;
-    margin:auto
+    margin: auto
 }
+/* badges header */
+@layer components {
+    .badges {
+        background-color: var(--color-neutral-400);
+        color: var(--color-neutral-50);
+        width: calc(var(--spacing) * 20);
+        text-align: center;
+        padding: calc(var(--spacing) * 2);
+        border-radius: var(--radius-2xl)
+
+    }
+}
+
