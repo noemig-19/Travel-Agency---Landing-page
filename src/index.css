@@ -5,7 +5,6 @@
 :root {
     --font-principal: "Roboto";
     --color-principal: #16c880;
-
     --color-dark-green: #032b1f;
 }
 
@@ -17,9 +16,14 @@
 body {
     font-family: var(--font-principal);
     list-style: none;
-    margin: auto
+    margin: auto;
+    width: 100%;
 }
-
+ @media (max-width: 768px) {
+        body{
+            width: 85%;
+        }
+    }
 /**
 Header
 **/
@@ -28,7 +32,7 @@ Header
     .badges {
         background-color: var(--color-neutral-50);
         color: var(--color-emerald-700);
-        width: calc(var(--spacing) * 28);
+        width: 20%;
         text-align: center;
         padding: calc(var(--spacing) * 2.8);
         border-radius: var(--radius-2xl);
@@ -37,6 +41,11 @@ Header
         cursor: pointer;
         border: 1px solid transparent;
         transition: border-color 0.3s ease, transform 0.2s ease;
+    }
+    @media  (max-width: 768px) {
+        .badges{
+            width: 100%;
+        }
     }
 }
 
@@ -52,5 +61,13 @@ Header
         border-radius: 20px;
         text-align: center;
     }
-}
 
+   
+}
+ @media (max-widht: 768px) {
+        .inputs-header{
+            width: full;
+            padding: 0px;
+        }
+     
+    }

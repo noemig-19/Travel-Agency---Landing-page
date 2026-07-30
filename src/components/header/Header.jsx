@@ -9,7 +9,7 @@ function Header() {
     /**
      * set: Albergo
      */
-    <section className="bg-[url(assets/spiaggia-2.jpg)] bg-cover bg-bottom">
+    <section className="bg-[url(assets/spiaggia-2.jpg)] bg-cover bg-bottom max-md:w-screen">
       <div className="flex flex-col justify-center gap-8 max-w-5xl m-auto mb-20">
         <h1 className="text-6xl font-bold text-neutral-50 text-center mt-50">
           Trova il tuo prossimo viaggio
@@ -19,16 +19,16 @@ function Header() {
         </h2>
       </div>
       <div>
-        <div className="bg-neutral-200 m-auto w-4xl p-8 rounded-2xl flex flex-col gap-6">
+        <div className="bg-neutral-200 m-auto max-w-4xl p-8 rounded-2xl flex flex-col gap-6 max-md:w-screen">
           <div className="flex justify-center gap-8 pb-4">
             <span className="badges">hotels</span>
             <span className="badges">voli</span>
             <span className="badges">autonoleggi</span>
           </div>
-          <div className="flex gap-8 m-auto">
+          <div className="flex gap-8 m-auto max-md:flex-col max-md:justify-center">
             <div className="flex flex-col justify-center gap-4 text-center">
               <span className="text-lg font-medium text-emerald-600">Scegli la destinazione</span>
-              <input type="text" className="inputs-header" placeholder="Dove stai andando?"/>
+              <input type="text" className="inputs-header" placeholder="Dove stai andando?" />
             </div>
             <div className="flex flex-col gap-4 text-center">
               <span className="text-lg font-medium text-emerald-600">Seleziona date</span>
@@ -37,7 +37,7 @@ function Header() {
             <div className="flex flex-col gap-4 text-center">
               <span className="text-lg font-medium text-emerald-600">Seleziona allogi e ospiti</span>
               <div>
-                <input type="text"  className="inputs-header w-80" placeholder="2 adulti · 0 bambini · 1 camera" />
+                <input type="text" className="inputs-header w-80" placeholder="2 adulti · 0 bambini · 1 camera" />
               </div>
             </div>
           </div>
