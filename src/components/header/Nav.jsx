@@ -2,8 +2,8 @@
 function Nav() {
 
     return (
-        <nav className="p-8">
-            <div className="flex justify-around max-md:gap-8">
+        <nav className="p-8 max-md:m-auto max-md:w-screen">
+            <div className="flex justify-around max-md:justify-between">
                 <div className="font-bold text-2xl text-emerald-700 cursor-pointer max-md:text-3xl">
                     Viaggiamo
                 </div>                {/*** nav responsive */} 
@@ -19,7 +19,6 @@ function Nav() {
                     </button>
                 </div>
             </div>
-
         </nav>
     )
 }

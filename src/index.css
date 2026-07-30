@@ -19,11 +19,7 @@ body {
     margin: auto;
     width: 100%;
 }
- @media (max-width: 768px) {
-        body{
-            width: 85%;
-        }
-    }
+
 /**
 Header
 **/
@@ -45,6 +41,7 @@ Header
     @media  (max-width: 768px) {
         .badges{
             width: 100%;
+            font-size: small;
         }
     }
 }
