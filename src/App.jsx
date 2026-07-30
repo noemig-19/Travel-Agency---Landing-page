@@ -3,6 +3,7 @@
  */
 import Nav from "./components/header/Nav"
 import Header from "./components/header/Header"
+import CardSection from "./components/main/CardSection"
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <>
    <Nav/>
    <Header/>
+   <CardSection/>
     </>
   )
 }
