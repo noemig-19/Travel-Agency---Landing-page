@@ -10,6 +10,7 @@
 
 @theme {
     --font-roboto: "Roboto", sans-serift;
+ 
     --color-esmerald: oklch(0.596 0.145 163.225)
 }
 
@@ -20,9 +21,8 @@ body {
     width: 100%;
 }
 
-/**
-Header
-**/
+/** ------------------ header ----------------------**/
+
 /* badges header */
 @layer components {
     .badges {
@@ -59,8 +59,6 @@ Header
         border-radius: 20px;
         text-align: center;
     }
-
-
 }
 
 @media (max-widht: 768px) {
@@ -71,12 +69,9 @@ Header
 
 }
 
-/**
-main
-**/
-/*
-cards-section
-*/
+/** ------------------ main-------------------------------**/
+
+/* cards-section */
 @layer {
     .card-main {
         display: flex;
@@ -105,4 +100,26 @@ cards-section
     .button-card-section:hover {
         color: var(--color-cyan-400);
     }
+}
+/* carrosello */
+
+@layer components {
+    .container-carrosello{
+           margin: auto;
+    max-width: 100%;
+    }
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-scroll {
+    animation: scroll 14s linear infinite;
+    will-change: transform;
 }

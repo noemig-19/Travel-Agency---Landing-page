@@ -1,21 +1,23 @@
 import data from "../../utils/data"
+import Carrosello from "../ui/Carrosello"
 
 function DestinationCarosell() {
-  return (
-   <section>
-    {
-      data.map(({citta, paese,prezzo, descrizione, immagine}, i) =>(
-        <div key={i}>
-          <img src={immagine} alt="" />
-          <h1>{citta}</h1>
-          <p>{paese}</p>
-          <span>${prezzo}</span>
-          <p>{descrizione}</p>
-        </div>
 
-      ))
-    }
-   </section>
+  const destinations = [...data, ...data]
+
+  return (
+    <section>
+      <div className="container-carrosello">
+        <div className="overflow-hidden w-full">
+          <div className="flex flex-nowrap animate-scroll"  >
+            {destinations.map((destination, index) => (
+              <Carrosello destination={destination} key={index} />
+            ))}
+          </div>
+
+        </div>
+      </div>
+    </section>
   )
 }
 

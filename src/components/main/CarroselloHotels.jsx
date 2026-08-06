@@ -1,19 +1,20 @@
 import dataHotel from "../../utils/dataHotels"
+import Carrosello from "../ui/Carrosello"
 
 function CarroselloHotels() {
+const hotels = [...dataHotel, ...dataHotel]
+
   return (
-    <div>
-      <div>
-      {dataHotel.map(({citta, paese, valutazione}, index)=>(
-        <div key={index}>
-            <h2>{citta}</h2>
-            <p>{paese}</p>
-            <span>{valutazione}</span>
-           
-        </div>
+     <div className="conteiner">
+        <div className="overflow-hidden w-full">
+          <div className="flex whitespace-nowrap">
+ {hotels.map((hotel, index) =>(
+        <Carrosello hotel={hotel} key={index}/>
       ))}
-    </div>
-    </div>
+          </div>
+          </div>
+          </div>
+
   )
 }
 
