@@ -1,4 +1,5 @@
 
+/*
 import dataRentCars from "../../utils/dataRentCars"
 import Carrosello from "../ui/Carrosello"
 
@@ -23,3 +24,4 @@ function CarroselloRentCar() {
 }
 
 export default CarroselloRentCar
+*/

@@ -1,3 +1,4 @@
+/*
 import dataVoli from "../../utils/dataVoli"
 import Carrosello from "../ui/Carrosello"
 
@@ -20,4 +21,4 @@ function CarroseloVoli() {
   )
 }
 
-export default CarroseloVoli
+export default CarroseloVoli*/

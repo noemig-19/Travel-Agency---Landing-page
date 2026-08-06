@@ -1,3 +1,5 @@
+
+/* *
 import dataHotel from "../../utils/dataHotels"
 import Carrosello from "../ui/Carrosello"
 
@@ -8,9 +10,10 @@ const hotels = [...dataHotel, ...dataHotel]
      <div className="conteiner">
         <div className="overflow-hidden w-full">
           <div className="flex whitespace-nowrap">
- {hotels.map((hotel, index) =>(
+            {/**{hotels.map((hotel, index) =>(
         <Carrosello hotel={hotel} key={index}/>
-      ))}
+      ))} }
+ 
           </div>
           </div>
           </div>
@@ -19,3 +22,4 @@ const hotels = [...dataHotel, ...dataHotel]
 }
 
 export default CarroselloHotels
+*/

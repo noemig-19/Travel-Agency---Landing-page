@@ -7,10 +7,11 @@ import CardSection from "./components/main/CardSection"
 /**
  * 
 import DestinationCategory from "./components/main/DestinationCategory"
- import CarroseloVoli from "./components/main/CarroseloVoli"*/
+ import CarroseloVoli from "./components/main/CarroseloVoli"
+ import CarroselloHotels from "./components/main/CarroselloHotels"
+import CarroselloRentCar from "./components/main/CarroselloRentCar"*/
 
-import CarroselloHotels from "./components/main/CarroselloHotels"
-import CarroselloRentCar from "./components/main/CarroselloRentCar"
+
 import DestinationCarosell from "./components/main/DestinationCarosell"
 
 
@@ -26,11 +27,11 @@ function App() {
    {
     /**
    <DestinationCategory/> <CarroseloVoli/>
-   */
+  <CarroselloHotels/>
+   <CarroselloRentCar/> */
    }
  <DestinationCarosell/>
-   <CarroselloHotels/>
-   <CarroselloRentCar/>
+   
    
    
     </>
