@@ -120,6 +120,8 @@ body {
 }
 
 .animate-scroll {
-    animation: scroll 14s linear infinite;
+    animation: scroll 62s linear infinite;
     will-change: transform;
+    width: max-content;
+    display: inline-flex;
 }

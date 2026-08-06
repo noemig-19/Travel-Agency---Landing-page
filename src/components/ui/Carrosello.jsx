@@ -8,19 +8,17 @@
 function Carrosello({ destination = {}}) {
 
     return (
-        <>
-
-            <div className="w-full">
-                <div className="w-xl mb-4 m-2">
-                    <img src={destination.immagine} alt={destination.name} className="bg-center bg-contain rounded-xl h-80"  />
-                </div>
-
-                <h1>{destination.citta}</h1>
-
-                <span> {destination.prezzo}</span>
-            </div>
-
-        </>
+          <div className="shrink-0  m-2">
+      <div className="rounded-xl overflow-hidden">
+        <img
+          src={destination.immagine}
+          alt={destination.name}
+          className="w-full h-80 object-cover rounded-xl"
+        />
+        <h1>{destination.citta}</h1>
+        <span>{destination.prezzo}</span>
+      </div>
+    </div>
     )
 }
 
