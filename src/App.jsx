@@ -4,6 +4,7 @@
 import Nav from "./components/header/Nav"
 import Header from "./components/header/Header"
 import CardSection from "./components/main/CardSection"
+import CittaCarrosello from "./components/main/CittaCarrosello"
 /**
  * 
 import DestinationCategory from "./components/main/DestinationCategory"
@@ -31,6 +32,8 @@ function App() {
    <CarroselloRentCar/> */
    }
  <DestinationCarosell/>
+ <CittaCarrosello/>
+
    
    
    
